@@ -1,0 +1,11 @@
+.call-action{
+    position: relative;
+  background-image: url('https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');  
+  background-repeat: no-repeat;
+  background-position: 50% 45%;
+  background-size: cover;  
+  height: calc(100vh - 56px);
+  width: 100%;
+  margin-top: 56px;
+
+}
