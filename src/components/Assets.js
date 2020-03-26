@@ -5,7 +5,7 @@ import asset from '../reducers/asset';
 
 class Assets extends Component{
   componentDidMount(){
-  this.props.fetchingAssets()
+  this.props.fetchingLastAssets()
   }
 
   render(){

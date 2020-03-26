@@ -7,8 +7,8 @@ export const getAssets = async () => {
   const response = await axios.get(ASSETS_API_URL)
   return response.data
 }
-export const getQuantityAssets = async () =>{
-  const response = await axios.get(`${ASSETS_API_URL}/Quantity`)
+export const getLastAssets = async () =>{
+  const response = await axios.get(`${ASSETS_API_URL}/Last`)
   return response.data
 }
 
