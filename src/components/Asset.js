@@ -4,7 +4,7 @@ const Asset = ({title, description,tag,imageURL }) => {
   return (    
     <div className="col-md-4 mb-4">
       <div className="card h-100">
-          <img src={imageURL} className="card-img" />
+          <img src={imageURL} className="card-img" alt={"..."} />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{description}</p>
@@ -14,5 +14,4 @@ const Asset = ({title, description,tag,imageURL }) => {
     </div>
   )
 }
-
 export default Asset

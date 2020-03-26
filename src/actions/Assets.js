@@ -1,5 +1,5 @@
 import ACTIONS from "./types";
-import {getAssets,postAssets,putAssets, getAssetsById} from "../api/AssetApi";
+import {getAssets,getQuantityAssets} from "../api/AssetApi";
 import history from '../history';
 
 export const fetchAssets = (assets) =>({
@@ -17,7 +17,7 @@ export const fetchAssetById = (asset) => ({
 })
 
 export const fetchingAssets = () => async (dispatch) => {
-  const assets = await getAssets()
+  const assets = await getQuantityAssets()
   dispatch(fetchAssets(assets))
 }
 
