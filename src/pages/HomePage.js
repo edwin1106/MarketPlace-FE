@@ -1,11 +1,13 @@
 import React from 'react';
-import AssetsContainer from '../containers/AssetsContainer'
+import LastAssetsContainer from '../containers/LastAssetsContainer'
 
 const HomePage = () => (
   <>
   <div className="call-action">
   </div>
-  <AssetsContainer/>
+  <div className="container main-cardsContainer">
+  <LastAssetsContainer/>
+  </div>
   </>
 )
 
