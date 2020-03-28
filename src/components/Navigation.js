@@ -15,11 +15,11 @@ const Navigation = () => (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">        
         <Nav className="mr-auto">
-          <Link className="nav-link" to={`/`}>
+          <Link className="nav-link" to={`/Assets`}>
             Assets
           </Link>
         </Nav>
-        <button class="btn btn-outline-primary my-2 my-sm-0" data-toggle="modal" data-target="#modalCreateAsset">Create</button>        
+        <button className="btn btn-outline-primary my-2 my-sm-0" data-toggle="modal" data-target="#modalCreateAsset">Create</button>        
       </Navbar.Collapse>
       
     </div>

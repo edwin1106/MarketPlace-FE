@@ -1,9 +1,9 @@
-import {fetchingLastAssets} from '../actions/Assets';
+import {fetchingAssets} from '../actions/Assets';
 import {connect} from 'react-redux';
-import Assets from '../components/Assets';
+import AllAssets from '../components/AllAssets';
 
 const mapStateToProps = (state) => ({
-  assets: state.asset.lastAssetsData
+  assets: state.asset.assetsData
 })
 
-export default connect(mapStateToProps,{fetchingLastAssets})(Assets)
+export default connect(mapStateToProps,{fetchingAssets})(AllAssets)
