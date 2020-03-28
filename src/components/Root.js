@@ -4,6 +4,7 @@ import history from '../history';
 import HomePage from '../pages/HomePage';
 import AssetsPage from '../pages/AssetsPage';
 import Navigation from './Navigation';
+import Footer from './Footer';
 
 const Root = () => {
   return (
@@ -16,6 +17,7 @@ const Root = () => {
         <Route path="/Assets" exact component = {AssetsPage}/>
       </Switch>
     </div>
+    <Footer/>
   </Router>
   </>
   )

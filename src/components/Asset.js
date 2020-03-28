@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Asset = ({title, description,tag,imageURL }) => {  
   return (    
     <div className="col-md-4 mb-4">
+      <Link className="text-reset" style={{textDecoration:'none'}} to={"/"}>
       <div className="card h-100">
           <img src={imageURL} className="card-img" alt={"..."} />
           <div className="card-body">
@@ -11,6 +13,7 @@ const Asset = ({title, description,tag,imageURL }) => {
             <p className="card-text"><small className="text-muted">{tag}</small></p>
           </div>
       </div>
+      </Link>
     </div>
   )
 }

@@ -24,3 +24,10 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
+.footer{
+  padding-top: 15px;
+  min-height: 50px;
+  text-align: center;
+  color: white;
+}
