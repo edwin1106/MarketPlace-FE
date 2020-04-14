@@ -3,7 +3,8 @@ import ACTIONS from '../actions/types'
 const defaultState = {
   assetsData: [],
   lastAssetsData: [],
-  actualizarAssetData: undefined
+  actualizarAssetData: undefined,
+  actualAsset: undefined
 }
 
 const asset = (state = defaultState, action) => {
@@ -12,6 +13,8 @@ const asset = (state = defaultState, action) => {
       return{ ...state, assetsData: action.payload};
     case ACTIONS.FETCH_LAST_ASSETS:
       return{ ...state, lastAssetsData: action.payload};
+    case ACTIONS.FETCH_ASSETS_BY_ID:
+      return{ ...state, actualAsset: action.payload}
     default:
       return state;
   }

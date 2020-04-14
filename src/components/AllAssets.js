@@ -2,12 +2,12 @@ import React from 'react'
 import { Component } from 'react';
 import Asset from '../components/Asset'
 
-class AllAssets extends Component{
-  componentDidMount(){
-  this.props.fetchingAssets()
+class AllAssets extends Component {
+  componentDidMount() {
+    this.props.fetchingAssets()
   }
 
-  render(){
+  render() {
     if (this.props.loading) {
       return (
         <center>
@@ -17,21 +17,22 @@ class AllAssets extends Component{
         </center>
       );
     }
-    return(
+    return (
       <>
-      <div className='card-deck'>
-        {this.props.assets.map((asset) =>
-        <Asset
-        title = {asset.title}
-        description = {asset.description}
-        tag = {asset.tag}
-        imageURL = {asset.imageURL}
-      />
-        )}
-      </div>
+        <div className='card-deck'>
+          {this.props.assets.map((asset) =>
+            <Asset
+              id={asset.id}
+              title={asset.title}
+              description={asset.description}
+              tag={asset.tag}
+              imageURL={asset.imageURL}
+            />
+          )}
+        </div>
       </>
     );
-    
+
   }
 }
 

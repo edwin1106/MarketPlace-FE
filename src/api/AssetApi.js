@@ -22,7 +22,7 @@ export const putAssets = async (asset) =>{
   return response
 }
 
-export const getAssetsById = async (id) => {
+export const getAssetById = async (id) => {
   const response = await axios.get(`${ASSETS_API_URL}/${id}`)
   return response.data
 }

@@ -1,14 +1,13 @@
 import React from 'react'
 import { Component } from 'react';
 import Asset from '../components/Asset'
-import asset from '../reducers/asset';
 
-class Assets extends Component{
-  componentDidMount(){
-  this.props.fetchingLastAssets()
+class Assets extends Component {
+  componentDidMount() {
+    this.props.fetchingLastAssets()
   }
 
-  render(){
+  render() {
     if (this.props.loading) {
       return (
         <center>
@@ -18,21 +17,22 @@ class Assets extends Component{
         </center>
       );
     }
-    return(
+    return (
       <>
-      <div className='card-deck'>
-        {this.props.assets.map((asset) =>
-        <Asset
-        title = {asset.title}
-        description = {asset.description}
-        tag = {asset.tag}
-        imageURL = {asset.imageURL}
-      />
-        )}
-      </div>
+        <div className='card-deck'>
+          {this.props.assets.map((asset) =>
+            <Asset
+              id ={asset.id}
+              title={asset.title}
+              description={asset.description}
+              tag={asset.tag}
+              imageURL={asset.imageURL}
+            />
+          )}
+        </div>
       </>
     );
-    
+
   }
 }
 

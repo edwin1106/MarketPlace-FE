@@ -1,6 +1,5 @@
 import ACTIONS from "./types";
-import {getAssets,getLastAssets} from "../api/AssetApi";
-import history from '../history';
+import {getAssets,getLastAssets, getAssetById} from "../api/AssetApi";
 
 export const fetchAssets = (assets) =>({
   type: ACTIONS.FETCH_ASSETS,
@@ -31,6 +30,10 @@ export const fetchingLastAssets = () => async (dispatch) => {
   dispatch(fetchLastAssets(assets))
 }
 
+export const fetchingAssetById = (id) => async (dispatch)=>{
+  const asset = await getAssetById(id)
+  dispatch(fetchAssetById(asset))
+}
 
 
 
