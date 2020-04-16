@@ -31,3 +31,15 @@
   text-align: center;
   color: white;
 }
+
+.cardDetails{
+  padding: 30px;
+}
+.cardDetails-body{
+  padding:0;
+}
+
+#main-container{
+  min-height: calc(100vh - 48px - 102px );
+
+}

@@ -11,14 +11,16 @@ class DetailAsset extends React.Component {
     if (this.props.asset) {
       const asset = this.props.asset
       return (
-          <div className="card">
+          <div className="card cardDetails">
             <div className="row ">
               <div className="col-md-7 col-sm-12 col-xs-12">
-                <img src={asset.imageURL} class="card-img-top" alt="..."  style= {{height:'100%'}}/>
+                <img src={asset.imageURL} class="card-img-top" alt="..."  />
               </div >
               <div className="col">
-                <div className="card-body">
+                <div className="card-body cardDetails-body">
                   <h5 className="card-title">{asset.title}</h5>
+                    <p className="card-text">{asset.description}</p>
+                    <p className="card-text">{asset.description}</p>
                     <p className="card-text">{asset.description}</p>
                     <p className="card-text">{asset.description}</p>
                     <br/>
